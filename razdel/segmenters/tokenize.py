@@ -40,7 +40,7 @@ PUNCTS = '\\/!#$%&*+,.:;<=>?@^_`|~№…' + DASHES + QUOTES + BRACKETS
 
 ATOM = re.compile(
     r'''
-    (?P<RU>[а-яё]+)
+    (?P<RU>[а-яёіїґ]+)
     |(?P<LAT>[a-z]+)
     |(?P<INT>\d+)
     |(?P<PUNCT>[%s])
